@@ -1,6 +1,6 @@
 name: Personal Metrics
 on:
-  # Schedule updates (at 00:00 every day)
+  # Schedule updates (at 00:00 every day) ...
   schedule: [{cron: "0 0 * * *"}]
   # (optional) Run workflow manually
   workflow_dispatch:
@@ -17,4 +17,5 @@ jobs:
           filename: metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+
           plugin_isocalendar: yes
