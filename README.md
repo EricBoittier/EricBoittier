@@ -1,2 +1,2 @@
 #  G'day
-![Metrics](https://github.com/ericboittier/ericboittier/blob/main/metrics.plugin.isocalendar.svg)
+![Metrics](https://github.com/ericboittier/ericboittier/blob/main/github-metrics.svg)
