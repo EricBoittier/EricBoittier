@@ -1,6 +1,6 @@
-name: Personal Metrics
+name: Metrics
 on:
-  # Schedule updates (at 00:00 every day) ...
+  # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
   # (optional) Run workflow manually
   workflow_dispatch:
@@ -9,13 +9,11 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    environment: 
+      name: prod
     permissions:
       contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-
-          plugin_isocalendar: yes
